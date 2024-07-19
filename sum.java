@@ -1,22 +1,13 @@
+import java.util.Scanner;
 public class sum {
-    int a,b,add;
-    void input(){
-        a=102;
-        b=103;
-
-    }
-    void calculate(){
-        add=a+b;
-    }
-    void display(){
-        System.out.println(add );
-    }
-}
-class summation{
-    public static void main(String a[]){
-        sum ob = new sum();
-        ob.input();
-        ob.calculate();
-        ob.display();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first number :- ");
+        int a = sc.nextInt();
+        System.out.print("Enter second number :- ");
+        int b = sc.nextInt();
+        int sum = a + b;
+        System.out.println("Sum of two numbers is :- "+sum);
+        
     }
 }
